@@ -9,18 +9,19 @@ import Image from "next/image";
 export async function getStaticPaths() {
   //create request to DB
   const res = await fetch("https://jherr-pokemon.s3.us-west-1.amazonaws.com/index.json")  
-
   const pokemon = await res.json()
 
-  return {
-    paths: pokemon.map(pokemon => {
-      return {
+  const paths = pokemon.map(pokemon => {
+    return {
         params: {id: pokemon.id.toString()}
-      }
-    }),
+    }
+  })
+
+  return {
+    paths: paths,
     fallback: false
-  }
-  // fallback, when the path is not the one? generate empty page?   
+    }
+  // fallback, when the path is not the one? generate empty page?    404 page
 }
 
 // server side props could also take params, in this case 
@@ -31,6 +32,7 @@ export async function getStaticProps({params}) {
     props: {
       pokemon: await res.json()
     }
+    // revalidate: 30 //it will update every 30 secs window
   }
 }
 
