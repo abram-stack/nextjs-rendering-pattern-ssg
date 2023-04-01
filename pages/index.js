@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 import {co2} from '@tgwf/co2'
 import Card from '../components/Card'
-import LogoImage from '../static/pokeLogo.png'
+import Header from '../components/Header'
 
 export async function getStaticProps() {
   //create request
@@ -29,18 +29,18 @@ export default function Home({ pokemon }) {
       <Head>
         <title>Entwurfsmuster</title>
       </Head>
-      {/* header goes here */}
-      <div className={styles.header}>
+      {/* <div className={styles.header}>
         <div className={styles.logoContainer}>
-          <Image
-            src={LogoImage}
-            alt='logo'
+        <Image
+        src={LogoImage}
+        alt='logo'
             width={100}
             height={100}
-          />
-        </div>
-      </div>
+            />
+            </div>
+          </div> */}
 
+      <Header/>
       {/* container */}
       <div className={styles.content}>
         <div className={styles.grid}>
