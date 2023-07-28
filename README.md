@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+This project is a part of my thesis subject.
+This website has been developed using modern JavaScript Frameworks such as React and Next.js. 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+This is part of the three small projects, which will be developed using 3 different rendering methods.
+As React in the nature using client-side rendering, other part of the project will be developed using the Server Side Rendering and Static Site Generation.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Next.js a React framework makes it possible to do that.
+Other than that and most importantly the energy source plays an immense role. 
+Where data are being stored and web hosting technology will determine if the product can achieve a sustainable product.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Goal
+Less is more.
+Sustainability in Software Development.
+The goal of this project is to find out if there is an effect of developing a website using Frameworks and web optimization on sustainability by measuring the amount 
+of Carbon Footprints by a single visit to the website.  
+Finding out the best practice or the considerations to be observed to develop a website in terms of sustainability.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## The Website
+The website provides over 500 data of pokemon characters with images and its attributes. 
+With lazy-loading image approach and Next.js `<Image>` Component or choosing image format such as webp, 
+the amount of the data transferred could be reduced drastically.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## The Output.
+In order to challenge the hypothesis, Ecograder was used to measure the amount of the CO2 emits. 
+Compared to the same website that uses the conventional approach during its development, the website using a modern Framework and Weboptimization emits 20x less CO2.
 
-## Learn More
+### Credits
+Thank you
+mightybytes for the inspiration, The green web foundation and CO2.js team.
+Shout out to Jack Herrington and special thanks for supplying the data chamber.
+Cheers mate🎉 🚀
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Ecograder:
+https://ecograder.com/
